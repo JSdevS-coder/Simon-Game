@@ -3,8 +3,10 @@ let gamePattern = []
 let userClickedPattern = []
 let level = 0
 
-$('.btn').click(handleClick)
-$(document).keypress(nextSequence)
+$(document).keypress(() => {
+	$('.btn').click(handleClick)
+	nextSequence()
+})
 
 function playSound(name) {
 	let audioTag = document.createElement('audio')
