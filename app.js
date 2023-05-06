@@ -9,7 +9,7 @@ $(document).keypress(nextSequence)
 function playSound(name) {
 	let audioTag = document.createElement('audio')
 	document.body.append(audioTag)
-	$('audio').attr('src', `./sounds/${name}.mp3`)
+	$('audio').attr('src', `./${name}.mp3`)
 	audioTag.play()
 }
 
